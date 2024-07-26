@@ -8,7 +8,7 @@ TARGET = bin/$(SOURCE_FILE)
 CC = g++
 
 # Opciones de compilación
-CFLAGS = -Wall -g
+CFLAGS = -Wall -g -O2
 
 .PHONY: all run debug clean
 
