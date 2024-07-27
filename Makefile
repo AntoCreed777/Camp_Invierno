@@ -17,11 +17,15 @@ all: $(TARGET)
 
 # Regla para compilar el programa
 $(TARGET): src/$(SOURCE_FILE).cpp
+	@echo "Compilando"
 	@$(CC) $(CFLAGS) $< -o $@
 	@echo "Compilacion terminada"
+	@echo ""
 
 # Regla para ejecutar el programa
 run: $(TARGET)
+	@echo "Ejecutando"
+	@echo ""
 	@./$(TARGET)
 # Regla para debugear el programa
 debug: $(TARGET)
