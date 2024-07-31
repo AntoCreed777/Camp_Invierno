@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#include <tuple>
 
 using namespace std;
 typedef long long ll;
@@ -65,7 +64,7 @@ int main() {
 
     ll x,l,r;
 
-    tie(x,l,r) = query(1, 0, n, t);
+    //tie(x,l,r) = query(1, 0, n, t);
 
     cout << x << " " << l << " " << r << "\n";
 
