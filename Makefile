@@ -5,7 +5,7 @@ SOURCE_FILE = $(file)
 TARGET = bin/$(SOURCE_FILE)
 
 # Compilador
-CC = g++
+CXX = g++
 
 # Opciones de compilación
 CFLAGS = -Wall -g -O2
@@ -18,7 +18,7 @@ all: $(TARGET)
 # Regla para compilar el programa
 $(TARGET): src/$(SOURCE_FILE).cpp
 	@echo "Compilando"
-	@$(CC) $(CFLAGS) $< -o $@
+	@$(CXX) $(CFLAGS) $< -o $@
 	@echo "Compilacion terminada"
 	@echo ""
 
